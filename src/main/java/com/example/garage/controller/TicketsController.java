@@ -79,7 +79,9 @@ public class TicketsController {
         for (int i = 0; i < response.size() ; i++) {
             if (i == 0)
             {
-                size.add(response.get(i).getVehicleSize());
+                for (int j = 1; j <= response.get(i).getVehicleSize(); j++) {
+                    size.add(j);
+                }
                 currParkSlot = response.get(i).getVehicleSize() + parkingSpace;
             }
 
