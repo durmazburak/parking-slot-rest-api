@@ -3,7 +3,6 @@ A microservice for managing a parking lot
 
 
 Example DB inserts
-------------------
 
 CREATE TABLE public.tickets (
 	ticket_id serial4 NOT NULL,
